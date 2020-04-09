@@ -47,8 +47,8 @@
 
 VLOG_DEFINE_THIS_MODULE(controller);
 
-#define MAX_SWITCHES 16
-#define MAX_LISTENERS 16
+#define MAX_SWITCHES 4096
+#define MAX_LISTENERS 4096
 
 struct switch_ {
     struct lswitch *lswitch;
@@ -387,7 +387,7 @@ parse_options(int argc, char *argv[])
 static void
 usage(void)
 {
-    printf("%s: OpenFlow controller\n"
+    printf("%s: OpenFlow controller, patched for FCS\n"
            "usage: %s [OPTIONS] METHOD\n"
            "where METHOD is any OpenFlow connection method.\n",
            program_name, program_name);
