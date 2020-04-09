@@ -516,6 +516,9 @@ not work.
 Use ``ovsdb-tool cluster-to-standalone`` to convert clustered database to
 standalone database when the cluster is down and cannot be revived.
 
+Use ``ovsdb-tool cluster-to-standalone`` to convert clustered database to
+standalone database when the cluster is down and cannot be revived.
+
 Upgrading or Downgrading a Database
 -----------------------------------
 
